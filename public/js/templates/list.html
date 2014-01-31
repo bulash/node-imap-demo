@@ -1,0 +1,23 @@
+<div class="btn-group">
+  <a href="#p<%= +page - 1 %>" type="button" class="prev btn btn-default" <%= page == 1 ? "disabled='true'" : '' %>>
+    <span class="glyphicon glyphicon-chevron-left">
+  </a>
+  <a href="#p<%= +page + 1 %>" type="button" class="next btn btn-default">
+    <span class="glyphicon glyphicon-chevron-right">
+  </a>
+</div>
+<h5 style="display:inline-block;padding-left:10px;"><%= (page-1)*perpage+1 %> - <%= page*perpage %> of <%= boxCount %></h5>
+
+<hr style="margin:10px 0">
+
+<ul id="list" class="list-group">
+</ul>
+
+<div class="btn-group">
+  <a href="#p<%= +page - 1 %>" type="button" class="prev btn btn-default" <%= page == 1 ? "disabled='true'" : '' %>>
+    <span class="glyphicon glyphicon-chevron-left">
+  </a>
+  <a href="#p<%= +page + 1 %>" type="button" class="next btn btn-default">
+    <span class="glyphicon glyphicon-chevron-right">
+  </a>
+</div>
